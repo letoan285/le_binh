@@ -49,7 +49,7 @@ $products = $stmt->fetchAll();
                                 <td><?= $value['status'] == 1 ? 'Hien thi' : 'Khong hien thi' ?></td>
                                 <td>
                                     <a class="btn btn-sm btn-warning" href="edit.php?id=<?= $value['id'] ?>">sua</a>
-                                    <a class="btn btn-sm btn-danger" href="delete.php?id=<?= $value['id'] ?>">xoa</a>
+                                    <a class="btn btn-sm btn-danger" href="edit.php?action=del&id=<?= $value['id'] ?>">xoa</a>
                                 </td>
                             </tr>
                         <?php endforeach ?>
